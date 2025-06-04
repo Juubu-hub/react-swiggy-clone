@@ -14,6 +14,8 @@ const RestaurantCard = ({ name, image, cuisine, rating, offer, items }) => {
             transition: transform 0.2s ;
           }
 
+          
+
           .body:hover {
             cursor: pointer;
             transform: scale(1.07);
