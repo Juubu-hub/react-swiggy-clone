@@ -1,18 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { HeaderComponent } from "./components/header";
+// import { HeaderComponent } from "./components/header";
+// import Footer from "./components/foot"
+// import Body from "./components/body";
+import { RouterProvider } from "react-router-dom";
+import appRouter from "./src/routes/routers";
 
-import Body from "./components/body";
-
-// import "./index.css";
-
-const container = (
-  <>
-    <HeaderComponent /> 
-    <Body/>
-    
-  </>
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <RouterProvider router={appRouter} />
 );
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(container);
-
